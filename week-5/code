@@ -89,6 +89,7 @@ class CurrentAccount extends Account {
 public class Bank {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+	System.out.println("1BM22CS179");
 
         // Create savings account
         System.out.println("Creating a Savings Account");
@@ -195,6 +196,5 @@ public class Bank {
                     System.out.println("Invalid choice");
             }
         }
-	System.out.println("1BM22CS179");
     }
 }
