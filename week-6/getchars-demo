@@ -1,0 +1,19 @@
+public class SubstringExtraction {
+public static void main(String[] args) {
+
+// Given string
+String originalString = "Welcome to Bmsce college"
+
+// Declare a char array to store the extracted substring
+char[] extractedChars = new char[5];
+
+// Extract "Bmsce" using getChars()
+originalString.getChars(11, 16, extractedChars, 0);
+
+// Convert char array to string
+String extractedString = new String(extractedChars);
+
+// Print the extracted substring
+System.out.println("Extracted Substring: " + extractedString);
+}
+}
