@@ -1,0 +1,30 @@
+public class StringConstructorDemo {
+public static void main(String[] args) {
+String str1 = "Hello, World!"
+System.out.println("String created using a string literal: " + str1);
+}
+}
+
+public class StringConstructorDemo {
+public static void main(String[] args) {
+char[] charArray = {'H', 'e', 'l', 'l', 'o'};
+String str2 = new String(charArray);
+System.out.println("String created using the new keyword and char array: " + str2);
+}
+}
+
+public class StringConstructorDemo {
+public static void main(String[] args) {
+byte[] byteArray = {72, 101, 108, 108, 111};
+String str3 = new String(byteArray);
+System.out.println("String created using getBytes method: " + str3);
+}
+}
+
+public class StringConstructorDemo {
+public static void main(String[] args) {
+StringBuilder stringBuilder = new StringBuilder("Java");
+String str4 = new String(stringBuilder);
+System.out.println("String created using StringBuilder: " + str4);
+}
+}
