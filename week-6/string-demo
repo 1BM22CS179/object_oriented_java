@@ -1,0 +1,22 @@
+public class StringDemo {
+public static void main(String[] args) {
+
+// String Length
+String exampleString = "Hello, World!"
+int length = exampleString.length();
+System.out.println("String Length: " + length);
+
+// String Literal
+String stringLiteral1 = "Java"
+String stringLiteral2 = "Java" // Reusing the string literal
+System.out.println("String Literal 1: " + stringLiteral1);
+System.out.println("String Literal 2: " + stringLiteral2);
+System.out.println("Are String Literals Equal? " + (stringLiteral1 == stringLiteral2));
+
+// String Concatenation
+String firstName = "John"
+String lastName = "Doe"
+String fullName = firstName + " " + lastName;
+System.out.println("Concatenated String: " + fullName);
+}
+}
