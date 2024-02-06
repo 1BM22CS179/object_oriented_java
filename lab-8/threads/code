@@ -1,0 +1,31 @@
+class MessagePrinter implements Runnable {
+    private final String message;
+    private final long intervalMillis;
+
+    public MessagePrinter(String message, long intervalMillis) {
+        this.message = message;
+        this.intervalMillis = intervalMillis;
+    }
+
+    @Override
+    public void run() {
+        while (true) {
+            try {
+                System.out.println(message);
+                Thread.sleep(intervalMillis);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Thread thread1 = new Thread(new MessagePrinter("BMS College of Engineering", 10000));
+        Thread thread2 = new Thread(new MessagePrinter("CSE", 2000));
+
+        thread1.start();
+        thread2.start();
+    }
+}
